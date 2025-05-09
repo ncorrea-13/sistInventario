@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+<h1>Gestión de Inventario</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Descripción</h2>
+<p>Este proyecto es un sistema de gestión de inventario desarrollado con Node.js y TypeScript. Permite a los usuarios gestionar productos, categorías y stock de manera eficiente.</p>
 
-Currently, two official plugins are available:
+<h2>Instalación</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Requisitos Previos</h3>
+<ul>
+  <li>Node.js v14 o superior</li>
+  <li>npm v6 o superior</li>
+</ul>
 
-## Expanding the ESLint configuration
+<h3>Pasos de Instalación</h3>
+<ol>
+  <li>Clona el repositorio:
+    <pre><code>git clone https://github.com/tu-usuario/gestion-inventario.git
+cd gestion-inventario</code></pre>
+  </li>
+  <li>Instala las dependencias:
+    <pre><code>npm install</code></pre>
+  </li>
+  <li>Configura el entorno:
+    <ul>
+      <li>Crea un archivo <code>.env</code> en la raíz del proyecto y añade las variables necesarias.</li>
+    </ul>
+  </li>
+  <li>Compila el proyecto:
+    <pre><code>npm run build</code></pre>
+  </li>
+  <li>Inicia el servidor:
+    <pre><code>npm start</code></pre>
+  </li>
+</ol>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<h2>Uso</h2>
+<p>Para iniciar el servidor en modo desarrollo:</p>
+<pre><code>npm run dev</code></pre>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+<h2>Contribución</h2>
+<ol>
+  <li>Haz un fork del proyecto.</li>
+  <li>Crea una nueva rama (<code>git checkout -b feature-nueva-funcionalidad</code>).</li>
+  <li>Haz tus cambios y commitea (<code>git commit -am 'Añadir nueva funcionalidad'</code>).</li>
+  <li>Push a la rama (<code>git push origin feature-nueva-funcionalidad</code>).</li>
+  <li>Abre un Pull Request.</li>
+</ol>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<h2>Licencia</h2>
+<p>Este proyecto está bajo la licencia MIT. Consulta el archivo <code>LICENSE</code> para más detalles.</p>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+<h2>Contacto</h2>
+<p>Para preguntas o reportar problemas, puedes contactar a <a href="mailto:tu-email@example.com">tu-email@example.com</a>.</p>
